@@ -21,15 +21,19 @@
       <!--[if lt IE 7]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
-      <h2>What is n?</h2>
+      <h2>What is the voltage across C (Vc)?</h2>
       <div class="row">
-        <div class="small-3 columns">
-          <label>T (ms)</label>
+        <div class="small-2 columns">
+          <label>t (ms)</label>
           <input type="text" class="time" placeholder="Time (ms)" value="10" />
         </div>
         <div class="small-3 columns">
           <label>n</label>
           <input type="text" class="n" placeholder="n" value="1" />
+        </div>
+        <div id="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="RC_Slider">
+          <p>Value: <span id = RC_Slider_Out></span></p>
         </div>
         <div class="small-2 columns">
           <a href="#" class="button expand sincos">Cos</a>

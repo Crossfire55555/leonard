@@ -3,6 +3,14 @@ $(function(){
   graph.height(graph.width()/2);
   updateGraph();
 
+  var slider = document.getElementById("RC_Slider");
+  var output = document.getElementById("RC_Slider_Out");
+  output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+    output.innerHTML = this.value;
+
   $('.update-graph').click(function(){
     updateGraph();
   });
